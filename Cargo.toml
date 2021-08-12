@@ -1,0 +1,17 @@
+[package]
+name = "syscall-numbers"
+description = "System calls numbers for various architectures"
+version = "1.0.0" # Remember to update `html_root_url`.
+authors = [ "Koutheir Attouchi <koutheir@gmail.com>" ]
+homepage = "https://github.com/koutheir/syscall-numbers"
+repository = "https://github.com/koutheir/syscall-numbers"
+documentation = "https://docs.rs/syscall-numbers"
+readme = "README.md"
+license = "MIT"
+edition = "2018"
+categories = [ "external-ffi-bindings", "os", "os::linux-apis" ]
+keywords = [ "ffi", "api", "linux", "syscall", "kernel" ]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
