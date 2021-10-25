@@ -1,2 +1,5 @@
 /target
 Cargo.lock
+*.code-workspace
+*.tar.gz
+*.sh
