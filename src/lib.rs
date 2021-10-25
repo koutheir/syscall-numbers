@@ -1,4 +1,4 @@
-#![doc(html_root_url = "https://docs.rs/syscall-numbers/1.0.0")]
+#![doc(html_root_url = "https://docs.rs/syscall-numbers/2.0.0")]
 #![warn(
     //missing_docs,
     keyword_idents,
@@ -117,8 +117,6 @@ pub(crate) fn sys_call_name(
     base_index: c_long,
     number: c_long,
 ) -> Option<&'static str> {
-    use std::convert::TryFrom;
-
     if number >= base_index {
         if let Ok(index) = usize::try_from(number - base_index) {
             return names.get(index).filter(|name| !name.is_empty()).cloned();
@@ -133,8 +131,6 @@ pub(crate) fn is_valid_sys_call_number(
     base_index: c_long,
     number: c_long,
 ) -> bool {
-    use std::convert::TryFrom;
-
     if let Ok(names_len) = c_long::try_from(names.len()) {
         let last_number = base_index + names_len - 1;
         return number >= base_index && number <= last_number;
