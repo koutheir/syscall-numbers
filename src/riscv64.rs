@@ -90,7 +90,7 @@ pub const SYS_vmsplice: c_long = 0x4b;
 pub const SYS_splice: c_long = 0x4c;
 pub const SYS_tee: c_long = 0x4d;
 pub const SYS_readlinkat: c_long = 0x4e;
-pub const SYS_fstatat: c_long = 0x4f;
+pub const SYS_newfstatat: c_long = 0x4f;
 pub const SYS_fstat: c_long = 0x50;
 pub const SYS_sync: c_long = 0x51;
 pub const SYS_fsync: c_long = 0x52;
@@ -392,7 +392,7 @@ pub(crate) static SYS_CALL_NAME: &[&str] = &[
     "splice",
     "tee",
     "readlinkat",
-    "fstatat",
+    "newfstatat",
     "fstat",
     "sync",
     "fsync",
