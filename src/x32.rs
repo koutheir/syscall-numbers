@@ -316,6 +316,12 @@ pub const SYS_close_range: c_long = 0x400001b4;
 pub const SYS_openat2: c_long = 0x400001b5;
 pub const SYS_pidfd_getfd: c_long = 0x400001b6;
 pub const SYS_faccessat2: c_long = 0x400001b7;
+pub const SYS_process_madvise: c_long = 0x400001b8;
+pub const SYS_epoll_pwait2: c_long = 0x400001b9;
+pub const SYS_mount_setattr: c_long = 0x400001ba;
+pub const SYS_landlock_create_ruleset: c_long = 0x400001bc;
+pub const SYS_landlock_add_rule: c_long = 0x400001bd;
+pub const SYS_landlock_restrict_self: c_long = 0x400001be;
 pub const SYS_rt_sigaction: c_long = 0x40000200;
 pub const SYS_rt_sigreturn: c_long = 0x40000201;
 pub const SYS_ioctl: c_long = 0x40000202;
@@ -798,13 +804,13 @@ pub(crate) static SYS_CALL_NAME: &[&str] = &[
     "openat2",
     "pidfd_getfd",
     "faccessat2",
+    "process_madvise",
+    "epoll_pwait2",
+    "mount_setattr",
     "",
-    "",
-    "",
-    "",
-    "",
-    "",
-    "",
+    "landlock_create_ruleset",
+    "landlock_add_rule",
+    "landlock_restrict_self",
     "",
     "",
     "",

@@ -417,6 +417,12 @@ pub const SYS_close_range: c_long = 0x1b4;
 pub const SYS_openat2: c_long = 0x1b5;
 pub const SYS_pidfd_getfd: c_long = 0x1b6;
 pub const SYS_faccessat2: c_long = 0x1b7;
+pub const SYS_process_madvise: c_long = 0x1b8;
+pub const SYS_epoll_pwait2: c_long = 0x1b9;
+pub const SYS_mount_setattr: c_long = 0x1ba;
+pub const SYS_landlock_create_ruleset: c_long = 0x1bc;
+pub const SYS_landlock_add_rule: c_long = 0x1bd;
+pub const SYS_landlock_restrict_self: c_long = 0x1be;
 
 /// Minimum valid system call number.
 pub(crate) const SYS_CALL_BASE_INDEX: c_long = 0x0;
@@ -863,4 +869,11 @@ pub(crate) static SYS_CALL_NAME: &[&str] = &[
     "openat2",
     "pidfd_getfd",
     "faccessat2",
+    "process_madvise",
+    "epoll_pwait2",
+    "mount_setattr",
+    "",
+    "landlock_create_ruleset",
+    "landlock_add_rule",
+    "landlock_restrict_self",
 ];
