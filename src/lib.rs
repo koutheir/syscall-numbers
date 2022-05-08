@@ -1,4 +1,4 @@
-#![doc(html_root_url = "https://docs.rs/syscall-numbers/2.0.0")]
+#![doc(html_root_url = "https://docs.rs/syscall-numbers/3.0.0")]
 #![warn(
     //missing_docs,
     keyword_idents,
