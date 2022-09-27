@@ -1,3 +1,4 @@
+#![doc = include_str!("../README.md")]
 #![doc(html_root_url = "https://docs.rs/syscall-numbers/3.0.0")]
 #![warn(
     //missing_docs,
@@ -14,19 +15,6 @@
     variant_size_differences,
     unused_qualifications
 )]
-
-/*!
-## System calls numbers for various architectures
-
-Only Linux is currently supported.
-
-## Versioning
-
-This project adheres to [Semantic Versioning].
-The `CHANGELOG.md` file details notable changes over time.
-
-[Semantic Versioning]: https://semver.org/spec/v2.0.0.html
-*/
 
 /// AArch64 definitions.
 pub mod aarch64;
