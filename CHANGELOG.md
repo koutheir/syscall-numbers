@@ -2,6 +2,14 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.0] - 2023-04-12
+
+### Changed
+
+- Added support for `no_std`.
+
+  Thank you, [*BrainStackOverFlow*](https://github.com/BrainStackOverFlow).
+
 ## [3.0.0] - 2022-05-08
 
 ### Changed
