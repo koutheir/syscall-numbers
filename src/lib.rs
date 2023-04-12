@@ -15,6 +15,7 @@
     variant_size_differences,
     unused_qualifications
 )]
+#![no_std]
 
 /// AArch64 definitions.
 pub mod aarch64;
@@ -97,7 +98,7 @@ pub use x86 as native;
 #[cfg(target_arch = "x86_64")]
 pub use x86_64 as native;
 
-use std::os::raw::c_long;
+use core::ffi::c_long;
 
 /// Returns the name of a system call, given its number.
 pub(crate) fn sys_call_name(
