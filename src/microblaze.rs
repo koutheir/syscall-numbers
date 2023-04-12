@@ -1,6 +1,6 @@
 #![allow(non_upper_case_globals)]
 
-use std::os::raw::c_long;
+use core::ffi::c_long;
 
 /// Returns `true` if `number` is a valid system call number.
 pub fn is_valid_sys_call_number(number: c_long) -> bool {
