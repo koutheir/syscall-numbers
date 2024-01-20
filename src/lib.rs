@@ -1,6 +1,7 @@
 #![doc = include_str!("../README.md")]
 #![doc(html_root_url = "https://docs.rs/syscall-numbers/3.1.0")]
 #![warn(
+    unsafe_op_in_unsafe_fn,
     //missing_docs,
     keyword_idents,
     macro_use_extern_crate,
