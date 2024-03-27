@@ -2,6 +2,12 @@
 
 This project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [3.1.1] - 2024-03-27
+
+### Changed
+
+- Moved repository to `codeberg.org`.
+
 ## [3.1.0] - 2023-04-12
 
 ### Changed

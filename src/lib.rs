@@ -1,5 +1,5 @@
 #![doc = include_str!("../README.md")]
-#![doc(html_root_url = "https://docs.rs/syscall-numbers/3.1.0")]
+#![doc(html_root_url = "https://docs.rs/syscall-numbers/3.1.1")]
 #![warn(
     unsafe_op_in_unsafe_fn,
     //missing_docs,
@@ -16,7 +16,6 @@
     variant_size_differences,
     unused_qualifications
 )]
-
 #![no_std]
 
 /// AArch64 definitions.
